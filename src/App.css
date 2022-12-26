@@ -1,0 +1,49 @@
+#app {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#currentWeather {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 70px;
+}
+#todayWeather {
+  padding: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 1s;
+}
+#todayWeather:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  backdrop-filter: blur(10px);
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(25, 25, 112, 0.475);
+}
+
+.spinnerBox {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.spinner {
+  width: 50px;
+  border: 5px solid skyblue;
+  border-radius: 50%;
+  border-top: 5px solid white;
+  aspect-ratio: 1/1;
+  animation: rotate 1s linear infinite forwards;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

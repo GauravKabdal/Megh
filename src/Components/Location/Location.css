@@ -1,0 +1,61 @@
+#search {
+  width: 50vw;
+  height: max-content;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#search > input {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.locations {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+  transition: all 0.2s;
+}
+
+.locations:hover {
+  background-color: lightgray;
+}
+
+.locations > p {
+  font-size: 20px;
+  cursor: pointer;
+}
+#selectedLocation > div:nth-child(1) > p:nth-child(1) {
+  font-size: 30px;
+  background-color: midnightblue;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+#selectedLocation > p:nth-child(1) :hover {
+  transform: scale(1.1);
+}
+#selectedLocation {
+  line-height: 25px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 1s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+#selectedLocation:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  backdrop-filter: blur(10px);
+}
+.glass {
+  background-color: hsl(0deg 100% 91% / 24%);
+  backdrop-filter: blur(10px);
+}
