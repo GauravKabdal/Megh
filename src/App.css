@@ -1,5 +1,4 @@
 #app {
-  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,6 +15,12 @@
   border-radius: 10px;
   transition: all 1s;
 }
+.weather {
+  padding: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 1s;
+}
 #todayWeather:hover {
   background-color: hsla(0, 0%, 100%, 0.3);
   backdrop-filter: blur(10px);
@@ -26,7 +31,12 @@
   z-index: 1;
   background-color: rgba(25, 25, 112, 0.475);
 }
-
+#forecast {
+  display: flex;
+  gap: 5px;
+  white-space: nowrap;
+  overflow: auto;
+}
 .spinnerBox {
   display: grid;
   place-items: center;
@@ -41,7 +51,12 @@
   aspect-ratio: 1/1;
   animation: rotate 1s linear infinite forwards;
 }
-
+#Aqi {
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+  align-items: center;
+}
 @keyframes rotate {
   to {
     transform: rotate(360deg);

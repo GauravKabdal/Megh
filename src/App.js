@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import CurrWeather from "./Components/CurrWeather/CurrWeather";
 import Location from "./Components/Location/Location";
-import Sunny from "../src/Assets/Sunny.png";
+import Forecast from "./Components/Forecast/Forecast";
 import Cloudy from "../src/Assets/Cloudy.png";
 function App() {
   const [location, setLocation] = useState({
@@ -28,6 +28,7 @@ function App() {
             changeLocation={(loc) => setLocation(loc)}
           />
           <CurrWeather lon={location.longitude} lat={location.latitude} />
+          <Forecast lon={location.longitude} lat={location.latitude} />
         </div>
       </div>
     </>
