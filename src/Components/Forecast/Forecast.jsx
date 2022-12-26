@@ -5,6 +5,7 @@ const Forecast = ({ lat, lon }) => {
 
   useEffect(() => {
     getforeCast();
+    // eslint-disable-next-line
   }, [lat, lon]);
 
   const getforeCast = async () => {

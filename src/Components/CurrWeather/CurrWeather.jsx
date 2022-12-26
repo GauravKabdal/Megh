@@ -8,6 +8,7 @@ const CurrWeather = ({ lon = 0, lat = 0 }) => {
   useEffect(() => {
     getTemp();
     getAQI();
+    // eslint-disable-next-line
   }, [lon, lat]);
 
   const getAQI = async () => {
