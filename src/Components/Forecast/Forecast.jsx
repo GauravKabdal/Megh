@@ -10,7 +10,7 @@ const Forecast = ({ lat, lon }) => {
 
   const getforeCast = async () => {
     const res = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=d7279808b9e377ce4dd7539ce31c8e96`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=d7279808b9e377ce4dd7539ce31c8e96`
     );
     const data = await res.json();
     setForecast(data.list);
