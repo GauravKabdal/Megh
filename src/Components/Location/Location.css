@@ -59,3 +59,9 @@
   background-color: hsl(0deg 100% 91% / 24%);
   backdrop-filter: blur(10px);
 }
+
+@media screen and (max-width: 900px) {
+  #selectedLocation {
+    flex-direction: column;
+  }
+}
