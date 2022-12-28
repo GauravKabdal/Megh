@@ -64,10 +64,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  #forecast {
-    flex-direction: column;
-  }
-
   #Aqi {
     flex-direction: column;
   }
